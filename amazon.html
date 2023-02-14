@@ -25,11 +25,12 @@
 
         #nav-left {
             display: flex;
-            width: 330px;
+            width: 350px;
         }
         #nav-left>div:nth-child(1)>img{
-            height: 60px;
-            width: 150px;
+            height: 40px;
+            width: 120px;
+            margin-top: 10px;
         }
         #nav-left>div:nth-child(2){
             margin-top: 10px;
@@ -41,12 +42,14 @@
         }
         #nav-left>div:nth-child(2)>div:nth-child(2){
             display: flex;
+            font-size: 15px;
         }
         #nav-search {
             display: flex;
             width: 800px;
             height: 40px;
             margin-top: 10px;
+            margin-left: 20px;
         }
         #nav-search>div:nth-child(1)>select{
             width: 50px;
@@ -68,6 +71,7 @@
             background-color: #febd69;
             height: 40px;
             width: 50px;
+            color: #131921;
         }
         #nav-search>div:nth-child(3)>i{
             font-size: 20px;
@@ -78,11 +82,7 @@
         #nav-right {
             display: flex;
             width: 400px;
-            border: 1px solid yellow;
-            margin-left: 10px;
-        }
-        #nav-right>div{
-            border: 1px solid whitesmoke;
+            margin-left: 30px;
         }
         #nav-right>div:nth-child(1){
             width: 65px;
@@ -102,7 +102,45 @@
             margin-left: 3px;
         }
         #nav-right>div:nth-child(2){
-            width: 150px;
+            width: 140px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        #nav-right>div:nth-child(2)>div:nth-child(1){
+            font-size: 14px;
+        }
+        #nav-right>div:nth-child(2)>div:nth-child(2){
+            display: flex;
+            font-size: 17px;
+        }
+        #nav-right>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)>i{
+            font-size: 14px;
+            margin-top: 6px;
+            margin-left: 3px;
+        }
+        #nav-right>div:nth-child(3){
+            width: 65px;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        #nav-right>div:nth-child(3)>div:nth-child(1){
+            font-size: 14px;
+        }
+        #nav-right>div:nth-child(3)>div:nth-child(2){
+            font-size: 17px;
+        }
+        #nav-right>div:nth-child(4){
+            width: 75px;
+            margin-left: 10px;
+            margin-top: 10px;
+            display: flex;
+        }
+        #nav-right>div:nth-child(4)>div:nth-child(1){
+            font-size: 35px;
+        }
+        #nav-right>div:nth-child(4)>div:nth-child(2){
+            font-size: 17px;
+            margin-top: 16px;
         }
 
     </style>
@@ -112,12 +150,12 @@
     <div id="screen">
         <div id="navbar">
             <div id="nav-left">
-                <div><img src="https://press.aboutamazon.in/static-files/3ca754e0-9176-4d89-8174-056267008479" alt="amazon"></div>
+                <div><img src="https://www.nicepng.com/png/full/16-167642_amazon-logo-amazon-logo-white-text.png" alt="amazon"></div>
                 <div>
                     <div>Hello</div>
                     <div>
                         <div><i class="fa-solid fa-location-dot"></i></div>
-                        <div><h4>Select your address</h4></div>
+                        <div>Select your address</div>
                     </div>
                 </div>
             </div>
@@ -197,6 +235,7 @@
                 </div>
             </div>
         </div>
+        <div></div>
     </div>
 
 </body>
