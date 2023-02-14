@@ -16,27 +16,95 @@
         #navbar {
             width: 100%;
             height: 60px;
-            /* background-color: #131921; */
-            /* color: #ffffff; */
+            background-color: #131921;
+            color: #ffffff;
             border: 1px solid black;
             display: flex;
-            justify-content: space-evenly;
+            /* justify-content: space-evenly; */
         }
 
         #nav-left {
             display: flex;
+            width: 330px;
         }
         #nav-left>div:nth-child(1)>img{
             height: 60px;
-            width: 100px;
+            width: 150px;
+        }
+        #nav-left>div:nth-child(2){
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        #nav-left>div:nth-child(2)>div:nth-child(1){
+            margin-left: 15px;
+            font-size: 14px;
+        }
+        #nav-left>div:nth-child(2)>div:nth-child(2){
+            display: flex;
         }
         #nav-search {
             display: flex;
+            width: 800px;
+            height: 40px;
+            margin-top: 10px;
+        }
+        #nav-search>div:nth-child(1)>select{
+            width: 50px;
+            height: 40px;
+            font-size: 14px;
+            background-color: #f3f3f3;
+            border: none;
+            outline: none;
+            border-right: 1px solid gray;
+        }
+        #nav-search>div:nth-child(2)>input{
+            width: 700px;
+            height: 40px;
+            font-size: 15px;
+            border: none;
+            outline: none;
+        }
+        #nav-search>div:nth-child(3){
+            background-color: #febd69;
+            height: 40px;
+            width: 50px;
+        }
+        #nav-search>div:nth-child(3)>i{
+            font-size: 20px;
+             margin-top: 8px;
+             margin-left: 13px;
         }
 
         #nav-right {
             display: flex;
+            width: 400px;
+            border: 1px solid yellow;
+            margin-left: 10px;
         }
+        #nav-right>div{
+            border: 1px solid whitesmoke;
+        }
+        #nav-right>div:nth-child(1){
+            width: 65px;
+            display: flex;
+            margin-top: 30px;
+        }
+        #nav-right>div:nth-child(1)>img{
+            height: 16px;
+            width: 22px;
+        }
+        #nav-right>div:nth-child(1)>div{
+            margin-left: 5px;
+        }
+        #nav-right>div:nth-child(1)>i{
+            font-size: 12px;
+            margin-top: 6px;
+            margin-left: 3px;
+        }
+        #nav-right>div:nth-child(2){
+            width: 150px;
+        }
+
     </style>
 </head>
 
@@ -49,7 +117,7 @@
                     <div>Hello</div>
                     <div>
                         <div><i class="fa-solid fa-location-dot"></i></div>
-                        <div>Select your address</div>
+                        <div><h4>Select your address</h4></div>
                     </div>
                 </div>
             </div>
@@ -108,8 +176,8 @@
             </div>
             <div id="nav-right">
                 <div>
-                    <img src="" alt="india">
-                    <div>EN</div>
+                    <img src="https://cdn.pixabay.com/photo/2018/01/21/14/36/indian-flag-3096740__340.png" alt="india">
+                    <div><h4>EN</h4></div>
                     <i class="fa-solid fa-angle-down"></i>
                 </div>
                 <div>
