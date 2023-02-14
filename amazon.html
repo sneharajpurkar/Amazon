@@ -1,12 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <script src="https://kit.fontawesome.com/d4fa596027.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazon</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #navbar {
+            width: 100%;
+            height: 60px;
+            /* background-color: #131921; */
+            /* color: #ffffff; */
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #nav-left {
+            display: flex;
+        }
+        #nav-left>div:nth-child(1)>img{
+            height: 60px;
+            width: 100px;
+        }
+        #nav-search {
+            display: flex;
+        }
+
+        #nav-right {
+            display: flex;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div id="screen">
+        <div id="navbar">
+            <div id="nav-left">
+                <div><img src="https://press.aboutamazon.in/static-files/3ca754e0-9176-4d89-8174-056267008479" alt="amazon"></div>
+                <div>
+                    <div>Hello</div>
+                    <div>
+                        <div><i class="fa-solid fa-location-dot"></i></div>
+                        <div>Select your address</div>
+                    </div>
+                </div>
+            </div>
+            <div id="nav-search">
+                <div>
+                    <select>
+                        <option>All</option>
+                        <option>All Categories</option>
+                        <option>Alexa Skills</option>
+                        <option>Amazon Devices</option>
+                        <option>Amazon Fashion</option>
+                        <option>Amazon Fresh</option>
+                        <option>Amazon Pharmacy</option>
+                        <option>Appliances</option>
+                        <option>Apps & Games</option>
+                        <option>Baby</option>
+                        <option>Beauty</option>
+                        <option>Books</option>
+                        <option>Car & Motorbike</option>
+                        <option>Clothing & Accessories</option>
+                        <option>Collectibles</option>
+                        <option>Computers & Accessories</option>
+                        <option>Deals</option>
+                        <option>Electronics</option>
+                        <option>Furniture</option>
+                        <option>Garden & Outdoors</option>
+                        <option>Gift Cards</option>
+                        <option>Grocery & Gourmet Foods</option>
+                        <option>Health & Personal Care</option>
+                        <option>Home & Kitchen</option>
+                        <option>Industrial & Scientific</option>
+                        <option>Jewellery</option>
+                        <option>Kindle Store</option>
+                        <option>Luggage & Bags</option>
+                        <option>Luxury Beauty</option>
+                        <option>Movies & TV Shows</option>
+                        <option>Music</option>
+                        <option>Musical Instruments</option>
+                        <option>Office Products</option>
+                        <option>Pet Supplies</option>
+                        <option>Prime Video</option>
+                        <option>Same-Day Delivery</option>
+                        <option>Shoes & Handbags</option>
+                        <option>Software</option>
+                        <option>Sports, Fitness & Outdoors</option>
+                        <option>Subscribe & Save</option>
+                        <option>Tools & Home Improvement</option>
+                        <option>Toys & Games</option>
+                        <option>Under ₹500</option>
+                        <option>Video Games</option>
+                        <option>Watches</option>
+                    </select>
+                </div>
+                <div><input type="text" placeholder="Search Amazon.in"></div>
+                <div><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+            <div id="nav-right">
+                <div>
+                    <img src="" alt="india">
+                    <div>EN</div>
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <div>
+                    <div>Hello, sign in</div>
+                    <div>
+                        <div>Account and Lists</div>
+                        <div><i class="fa-solid fa-angle-down"></i></div>
+                    </div>
+                </div>
+                <div>
+                    <div>Returns</div>
+                    <div>& Orders</div>
+                </div>
+                <div>
+                    <div><i class="fa-solid fa-cart-shopping"></i></div>
+                    <div>Cart</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
