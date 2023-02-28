@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login A</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100%;
+        }
+        #image{
+            text-align: center;
+            margin-top: 5px;
+        }
+        #image>img{
+            height: 60px;
+            width: 160px;
+        }
+        #body{
+            width: 24%;
+            height: 580px;
+            margin: auto;
+            margin-top: 5px;
+            background-color: white;
+            border: 1px solid rgb(190, 188, 188);
+            border-radius: 5px;
+        }
+        #body>div:nth-child(1){
+            width: 300px;
+            height: 370px;
+            margin: auto;
+            color: black;
+            margin-top: 10px;
+
+        }
+        #body>div:nth-child(1)>form>label{
+            font-size: 16px;
+            color: black;
+            font-weight: bold;
+            margin-top: 20px;
+
+        }
+        #body>div:nth-child(1)>form>input{
+            width: 300px;
+            height: 35px;
+            outline: none;
+            margin-top: 10px;
+            font-size: 15px;
+            border: 0.5px solid gray;
+            border-radius: 5px;
+        }
+        #body>div:nth-child(1)>form{
+            margin-top: 10px;
+        }
+        p{
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div id="image">
+        <img src="./Screenshot_20230228_054924.png" alt="1" />
+    </div>
+    <div id="body">
+        <div>
+            <h1>Login</h1>
+            <form onsubmit="register(event)">
+                <label>Name:</label><br />
+                <input id="userName" type="text" /><br />
+                <label>Mobile Number:</label><br />
+                <input id="userNumber" type="number" /><br />
+                <label>Email:</label><br />
+                <input id="userEmail" type="email" /><br />
+                <label>Password:</label><br />
+                <input id="userPassword" type="password" /><br /><br />
+                <p>By enrolling your mobile phone number, you consent to receive automated security notifications via text message from Amazon. Message and data rates may apply.</p>
+                <input style="background-color: #f7c850; border: none; outline: none; height: 35px; font-size: 14px;  cursor: pointer; margin-top: 15px; border-radius: 5px;" type="Submit" value="REGISTER" />
+                <p style="margin-top: 20px; margin-bottom: 10px;">Already have an account? Sign in<br/>
+                    Buying for work? Create a free business account</p>
+                    <p >By creating an account or logging in, you agree to Amazon’s Conditions of Use and Privacy Policy.</p>
+            </form>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
