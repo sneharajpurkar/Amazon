@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/d4fa596027.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #navbar1 {
+            width: 100%;
+            height: 60px;
+            background-color: #131921;
+            color: #ffffff;
+            border: 1px solid black;
+            display: flex;
+            /* justify-content: space-evenly; */
+        }
+
+        #nav-left {
+            display: flex;
+            width: 300px;
+        }
+
+        #nav-left>div:nth-child(1)>img {
+            height: 40px;
+            width: 100px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        #nav-left>div:nth-child(2) {
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        #nav-left>div:nth-child(2)>div:nth-child(1) {
+            margin-left: 15px;
+            font-size: 14px;
+        }
+
+        #nav-left>div:nth-child(2)>div:nth-child(2) {
+            display: flex;
+            font-size: 15px;
+        }
+
+        #nav-search {
+            display: flex;
+            width: 800px;
+            height: 40px;
+            margin-top: 10px;
+
+        }
+
+        #nav-search>div:nth-child(1)>select {
+            width: 50px;
+            height: 40px;
+            font-size: 14px;
+            background-color: #f3f3f3;
+            border: none;
+            outline: none;
+            border-right: 1px solid gray;
+        }
+
+        #nav-search>div:nth-child(2)>input {
+            width: 700px;
+            height: 40px;
+            font-size: 15px;
+            border: none;
+            outline: none;
+        }
+
+        #nav-search>div:nth-child(3) {
+            background-color: #febd69;
+            height: 40px;
+            width: 50px;
+            color: #131921;
+        }
+
+        #nav-search>div:nth-child(3)>i {
+            font-size: 20px;
+            margin-top: 8px;
+            margin-left: 13px;
+        }
+
+        #nav-right {
+            display: flex;
+            width: 400px;
+            margin-left: 30px;
+        }
+
+        #nav-right>div:nth-child(1) {
+            width: 65px;
+            display: flex;
+            margin-top: 30px;
+        }
+
+        #nav-right>div:nth-child(1)>img {
+            height: 16px;
+            width: 22px;
+        }
+
+        #nav-right>div:nth-child(1)>div {
+            margin-left: 5px;
+        }
+
+        #nav-right>div:nth-child(1)>i {
+            font-size: 12px;
+            margin-top: 6px;
+            margin-left: 3px;
+        }
+
+        #nav-right>div:nth-child(2) {
+            width: 140px;
+            margin-top: 10px;
+            margin-left: 15px;
+        }
+
+        #nav-right>div:nth-child(2)>div:nth-child(1) {
+            font-size: 14px;
+        }
+
+        #nav-right>div:nth-child(2)>div:nth-child(2) {
+            display: flex;
+            font-size: 17px;
+        }
+
+        #nav-right>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)>i {
+            font-size: 14px;
+            margin-top: 6px;
+            margin-left: 3px;
+        }
+
+        #nav-right>div:nth-child(3) {
+            width: 65px;
+            margin-left: 15px;
+            margin-top: 10px;
+        }
+
+        #nav-right>div:nth-child(3)>div:nth-child(1) {
+            font-size: 14px;
+        }
+
+        #nav-right>div:nth-child(3)>div:nth-child(2) {
+            font-size: 17px;
+        }
+
+        #nav-right>div:nth-child(4) {
+            width: 75px;
+            margin-left: 15px;
+            margin-top: 10px;
+            display: flex;
+        }
+
+        #nav-right>div:nth-child(4)>div:nth-child(1) {
+            font-size: 35px;
+        }
+
+        #nav-right>div:nth-child(4)>div:nth-child(2) {
+            font-size: 17px;
+            margin-top: 16px;
+        }
+
+        #navbar2 {
+            width: 100%;
+            height: 40px;
+            display: flex;
+            background-color: #232f3e;
+            color: #f3f3f3;
+        }
+
+        #navbar2>div:nth-child(1)>button {
+            background-color: #232f3e;
+            color: #f3f3f3;
+            border: none;
+            height: 30px;
+            width: 80px;
+            margin-top: 5px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        #navbar2>div:nth-child(2) {
+            display: flex;
+            justify-content: space-evenly;
+            width: 700px;
+            height: 36px;
+        }
+
+        #navbar2>div:nth-child(2)>div {
+            margin: 10px;
+            margin-top: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        #navbar2>div:nth-child(3)>img {
+            height: 40px;
+            margin-left: 200px;
+        }
+
+        #body {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #left-side {
+            width: 15%;
+            margin-left: 30px;
+            border-right: 1px solid black;
+        }
+
+        #left-side>div {
+            margin-top: 20px;
+        }
+
+        #right-side {
+            width: 80%;
+        }
+
+        #right-side>div:nth-child(1) {
+            margin-top: 20px;
+            margin-left: 45px;
+        }
+
+        #picture {
+            width: 100%;
+            display: flex;
+            margin-top: 20px;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        #picture2 {
+            margin-top: 20px;
+            height: 380px;
+            width: 20%;
+        }
+
+        #picture2>img {
+            /* border: 1px solid black; */
+            height: 300px;
+            width: 100%;
+
+            /* border: 1px solid red; */
+        }
+
+        #picture2>h1 {
+            font-size: 18px;
+        }
+
+        #picture2>p {
+            font-size: 16px;
+            margin-top: -12px;
+        }
+
+        #footer {
+            width: 100%;
+            height: 400px;
+            margin-top: 20px;
+            background-color:  #131921;
+            color: white;
+        }
+        #footer>div:nth-child(1){
+            height: 280px;
+            display: flex;
+            justify-content: space-evenly;
+            border-bottom: 1px solid lightgrey;
+        }
+        #footer>div>div{
+            margin-top: 30px;
+        }
+        #footer>div>div>div:nth-child(1){
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        #footer>div>div>div:nth-child(2){
+            margin-top: 20px;
+        }
+        #footer>div:nth-child(2){
+            text-align: center;
+            margin-top: 30px;
+        }
+         #footer>div:nth-child(2)>img{
+             height: 50px;
+            width: 150px;
+         }
+        
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <div id="navbar1">
+            <div id="nav-left">
+                <div><img src="https://www.nicepng.com/png/full/16-167642_amazon-logo-amazon-logo-white-text.png"
+                        alt="amazon"></div>
+                <div>
+                    <div>Hello</div>
+                    <div>
+                        <div><i class="fa-solid fa-location-dot"></i></div>
+                        <div>Select your address</div>
+                    </div>
+                </div>
+            </div>
+            <div id="nav-search">
+                <div>
+                    <select>
+                        <option>All</option>
+                        <option>All Categories</option>
+                        <option>Alexa Skills</option>
+                        <option>Amazon Devices</option>
+                        <option>Amazon Fashion</option>
+                        <option>Amazon Fresh</option>
+                        <option>Amazon Pharmacy</option>
+                        <option>Appliances</option>
+                        <option>Apps & Games</option>
+                        <option>Baby</option>
+                        <option>Beauty</option>
+                        <option>Books</option>
+                        <option>Car & Motorbike</option>
+                        <option>Clothing & Accessories</option>
+                        <option>Collectibles</option>
+                        <option>Computers & Accessories</option>
+                        <option>Deals</option>
+                        <option>Electronics</option>
+                        <option>Furniture</option>
+                        <option>Garden & Outdoors</option>
+                        <option>Gift Cards</option>
+                        <option>Grocery & Gourmet Foods</option>
+                        <option>Health & Personal Care</option>
+                        <option>Home & Kitchen</option>
+                        <option>Industrial & Scientific</option>
+                        <option>Jewellery</option>
+                        <option>Kindle Store</option>
+                        <option>Luggage & Bags</option>
+                        <option>Luxury Beauty</option>
+                        <option>Movies & TV Shows</option>
+                        <option>Music</option>
+                        <option>Musical Instruments</option>
+                        <option>Office Products</option>
+                        <option>Pet Supplies</option>
+                        <option>Prime Video</option>
+                        <option>Same-Day Delivery</option>
+                        <option>Shoes & Handbags</option>
+                        <option>Software</option>
+                        <option>Sports, Fitness & Outdoors</option>
+                        <option>Subscribe & Save</option>
+                        <option>Tools & Home Improvement</option>
+                        <option>Toys & Games</option>
+                        <option>Under ₹500</option>
+                        <option>Video Games</option>
+                        <option>Watches</option>
+                    </select>
+                </div>
+                <div><input type="text" placeholder="Search Amazon.in"></div>
+                <div><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+            <div id="nav-right">
+                <div>
+                    <img src="https://cdn.pixabay.com/photo/2018/01/21/14/36/indian-flag-3096740__340.png" alt="india">
+                    <div>
+                        <h4>EN</h4>
+                    </div>
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <div><a style="color: white;" href="/login.html">
+                        <div>Hello, sign in</div>
+                        <div>
+                            <div>Account and Lists</div>
+                            <div><i class="fa-solid fa-angle-down"></i></div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a style="color: white;" href="/cart.html">
+                    <div>Returns</div>
+                    <div>& Orders</div>
+                </a>
+                </div>
+                <div>
+                    <div><i class="fa-solid fa-cart-shopping"></i></div>
+                    <a style="color: white;" href="/add-product.html"><div>Cart</div></a>
+                </div>
+            </div>
+        </div>
+        <div id="navbar2">
+            <div>
+                <button>
+                    <i class="fa-solid fa-grip-lines"></i>
+                    All
+                </button>
+            </div>
+            <div>
+                <div>Sell</div>
+                <div>Amazon miniTV</div>
+                <div>Best Sellers</div>
+                <div>Mobiles</div>
+                <div>Customer Service</div>
+                <div>Today's Deals</div>
+                <div> Electronics </div>
+                <div>Amazon Pay</div>
+                <div>Prime</div>
+                <div>Fashion</div>
+                <div>New Releases</div>
+            </div>
+            <div>
+                <img src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/X-site/SingleTitle/Farzi-Launch/400x39-SWM_NP._CB613859124_.jpg"
+                    alt="image">
+            </div>
+        </div>
+    </div>
+    <div id="body">
+        <div id="left-side">
+            <div>
+                <h3>Amazon Choise</h3>
+                <li>Top Brands</li>
+                <li>Made for Amazon</li>
+                <li>Premium Brands</li>
+            </div>
+            <div>
+                <h3>Category</h3>
+                <li> Clothing & Accessories</li>
+                <li> Men</li>
+            </div>
+            <div>
+                <h3>Numeric Size</h3>
+                <li>32</li>
+                <li>33</li>
+                <li>34</li>
+                <li>35</li>
+                <li>36</li>
+                <li>37</li>
+            </div>
+            <div>
+                <h3>Standard Size</h3>
+                <li>2XS</li>
+                <li>XS</li>
+                <li>S</li>
+                <li>M</li>
+                <li>L</li>
+                <li>XL</li>
+            </div>
+            <div>
+                <h3>Price</h3>
+                <li>under 300</li>
+                <li>300-500</li>
+                <li>500-1000</li>
+                <li>1000-1500</li>
+                <li>over 1500</li>
+            </div>
+            <div>
+                <h3>Discount</h3>
+                <li>10% Off or more</li>
+                <li>25% Off or more</li>
+                <li>35% Off or more</li>
+                <li>50% Off or more</li>
+                <li>60% Off or more</li>
+                <li>70% Off or more</li>
+            </div>
+        </div>
+        <div id="right-side">
+            <div>
+                <h2>Recommended for you</h2>
+            </div>
+            <div id="picture"></div>
+        </div>
+    </div>
+    <div id="footer">
+        <div>
+            <div>
+                <div>Get to Know Us</div>
+                <div>About Us<br/>
+                    Careers<br/>
+                    Press Releases<br/>
+                    Amazon Science</div>
+            </div>
+            <div>
+                <div>Connect with Us</div>
+                <div>Facebook<br/>
+                    Twitter<br/>
+                    Instagram</div>
+            </div>
+            <div>
+                <div>Make Money with Us</div>
+                <div>Sell on Amazon<br/>
+                    Sell under Amazon Accelerator<br/>
+                    Protect and Build Your Brand<br/>
+                    Amazon Global Selling<br/>
+                    Become an Affiliate<br/>
+                    Fulfilment by Amazon<br/>
+                    Advertise Your Products<br/>
+                    Amazon Pay on Merchants
+                    </div>
+            </div>
+            <div>
+                <div>Let Us Help You</div>
+                <div>COVID-19 and Amazon<br/>
+                    Your Account<br/>
+                    Returns Centre<br/>
+                    100% Purchase Protection<br/>
+                    Amazon App Download<br/>
+                    Amazon Assistant Download<br/>
+                    Help</div>
+            </div>
+        </div>
+        <div>
+            <img src="./Screenshot_20230228_054924.png" alt="1" />
+        </div>
+        
+    </div>
+
+    <script src="./product.js"></script>
+</body>
+
+</html>
